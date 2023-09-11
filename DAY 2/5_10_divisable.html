@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+            <title>Calculator</title>
+
+        </head>
+        <body>
+            <label>Your Range</label>
+            <input type="number" id="user_input">
+            <p id="out"></p>
+
+            <button onclick="cal()">Value</button>
+          <script type="text/JavaScript">
+            function cal()
+            {
+                var a = document.getElementById("user_input").value;
+                for (var i=1; i<=a; i++)
+                    {
+                        if((i%5==0)&&(i%10==0))
+                        {
+                            document.write("<br>both 5 & 10 =="+i)
+                            
+                        }
+                        if((i%5==0))
+                        {
+                            document.write("<br>divisible by 5 =="+i)   
+                        }
+                        if((i%10==0))
+                        {
+                            document.write("<br>divisible by 10 =="+i)     
+                        }
+                    }
+            }
+          </script>
+        </body>
+    </html>

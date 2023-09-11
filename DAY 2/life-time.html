@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>life-time</title>
+</head>
+<body>
+    <style>
+        button{
+            background-color: black;
+            color: lightcyan;
+            text-shadow: 1px 2px crimson;
+        }
+    </style>
+    <script>
+        function lifetimesettle(){
+        const currentage= prompt("Enter the Age");
+        var maximumage= prompt("Enter the Maximum Age ");
+        balance= maximumage - currentage;
+        let food_per_day= balance*3*365;
+        document.write(food_per_day);
+        }
+
+    </script>
+    
+</body>
+
+<h2> Life time supply for food</h2>
+<button type="button" onclick="lifetimesettle()" class="btn btn-success">Calculate</button>
+</html>
