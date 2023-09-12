@@ -6,6 +6,34 @@
     <title>Evalutes numbers</title>
 </head>
 <body>
-    
+    <script>
+        var result;// declare a variable for the result
+        function ev(n1,n2,operation){
+         if(operation === "add"){
+            result=n1+n2;
+         }
+         else if (operation === "sub"){
+            result=n1-n2;
+         } 
+         else if (operation === "mul"){
+            result=n1*n2;
+         } 
+         else if (operation  === "div") {
+            result=n1/n2; 
+         } 
+         else if(operation === "mod") {
+            result=n1%n2; 
+         }  
+         else{
+            result="Invalid operations";
+         }
+        }
+
+        let n1 = parseInt(prompt("Enter the values"));
+        let n2= parseInt(prompt("Enter the values"));
+        let operation=prompt();
+        ev(n1,n2,operation); // calling the function
+        document.write("Result of " + n1 + " " + operation + " " + n2 + " is: " + result);
+    </script>
 </body>
 </html>

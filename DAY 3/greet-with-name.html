@@ -6,6 +6,16 @@
     <title>Greet with name</title>
 </head>
 <body>
+    <h1>Greetings With Name</h1>
+
+    <div id="G1"></div>
     
+    <script>
+        var name=prompt("enter your name");
+    document.getElementById("G1").innerHTML = myFunction("Have a nice day.");
+    function myFunction(ob) {
+      return "Hello! " + name +" "+ob;
+    }
+    </script>
 </body>
 </html>

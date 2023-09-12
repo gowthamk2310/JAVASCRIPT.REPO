@@ -6,6 +6,28 @@
     <title>Largest</title>
 </head>
 <body>
+    <script>
+        function LargestNumber(n1, n2, n3) {
+    if (n1 >= n2 && n1 >= n3) 
+    {
+        return n1;
+    }
+     else if (n2 >= n1 && n2 >= n3) 
+    {
+        return n2;
+    }
+    else {
+        return n3;
+    }
+}
+
+let n1 = parseInt(prompt("enter the number"));
+let n2 = parseInt(prompt("enter the number"));
+let n3 = parseInt(prompt("enter the number"));
+
+let largest = LargestNumber(n1, n2, n3);
+document.write("The largest numbers is: "+largest);
+    </script>
     
 </body>
 </html>

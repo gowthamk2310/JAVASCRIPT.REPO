@@ -6,6 +6,28 @@
     <title>Find triangle type</title>
 </head>
 <body>
+    <script>
+        function Triangle(side1, side2, side3) {
+    if (side1 === side2 && side2 === side3) {
+        return "Equilateral triangle";
+    }
+    else if (side1 === side2 || side1 === side3) 
+    {
+        return "Isosceles triangle";
+    } 
+    else {
+        return "Scalene triangle";
+    }
+}
+
+let side1 = parseInt(prompt("Enter the values"));
+let side2 = parseInt(prompt("Enter the values"));
+let side3 = parseInt(prompt("Enter the values"));
+
+var triangleType = Triangle(side1, side2, side3);
+
+document.write("The triangle is: " + triangleType);
+    </script>
     
 </body>
 </html>
