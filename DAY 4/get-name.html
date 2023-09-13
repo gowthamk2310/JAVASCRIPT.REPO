@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function print(){
+            var all = document.getElementByname("gender");
+            alert("The Given name is "+ all.length );
+         }
+    </script>
+</head>
+<body>
+    Gender:<input type="radio" name="gender" value="MALE">
+    <input type="radio" name="gender" value="FEMALE">
+    <input type="radio" name="gender" value="OTHERS">
+    <input type="button"  value="submit" onclick="print()">
+</body>
+</html>
