@@ -1,0 +1,42 @@
+ body {
+    font-family: sans-serif;
+    background-color: lightcoral;
+  }
+  
+  #controlPanel {
+    /* float: left; */
+    padding-top: 30px;
+    padding-left: 390px;
+  }
+  
+  .button1 {
+    background-color: rgb(4, 99, 102);
+    color: goldenrod;
+    border-radius: 15px;
+    padding: 10px;
+    height:60px ;
+    width:80px;
+    margin-left: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #traffic-light {
+    height: 550px;
+    width: 200px;
+    /* float: left; */
+    background-color: #333;
+    border-radius: 40px;
+    margin-left : 450px ;
+    margin-top: 42px;
+    padding: 20px;
+  }
+  
+  .bulb {
+    height: 150px;
+    width: 150px;
+    background-color: #111;
+    border-radius: 50%;
+    margin: 25px auto;
+    transition: background 500ms;
+  }

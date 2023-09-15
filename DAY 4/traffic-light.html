@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic light</title>
+    <script type="text/javascript" src="trafficlight.js"></script>
+    <link href="trafficlight.css" rel="stylesheet"></link>
+</head>
+<body>
+    <section>
+        <div id="controlPanel">
+            <button id="stopButton" class="button1" onclick ="illuminateRed()">STOP</button>
+            <button id="slowButton" class="button1" onclick ="illuminateYellow()">WAIT</button>
+            <button id="goButton" class="button1" onclick ="illuminateGreen()">GO</button>
+        </div>
+        <div id="traffic-light">
+            <div id="redLight" class="bulb"></div>
+            <div id="waitLight" class="bulb"></div>
+            <div id="goLight" class="bulb"></div>
+        </div>
+    </section>      
+</body>
+</html>

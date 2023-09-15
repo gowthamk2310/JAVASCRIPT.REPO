@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="dyn()">Click</button>
+    <div id="main"></div>
+    <script>
+        function dyn(){
+            var newDiv = document.createElement("p");
+            var text1 = document.createTextNode(" Hi! Welcome...");
+            newDiv.appendChild(text1);
+            var curDiv = document.getElementById("main");
+            
+            var htag = document.createElement("h1");
+            var text2 = document.createTextNode("JavaScript");
+            htag.appendChild(text2);
+            newDiv.appendChild(htag);
+            curDiv.appendChild(newDiv);
+            document.body.append(curDiv);
+        }
+    </script>
+    
+</body>
+</html>
