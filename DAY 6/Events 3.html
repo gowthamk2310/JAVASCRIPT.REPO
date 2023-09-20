@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>POPUP Box</h2>
+    <p id="pop"></p>
+    <button onclick="popup()">DISPLAY</button>
+    <script>
+        function popup() {
+            var text;
+            if (confirm("select one")){
+                text = "You have selected OK ";
+            }
+            else{
+                text = "You have selected CANCEL";
+            }
+            document.getElementById("pop").innerHTML = text;
+        }    
+    </script>
+</body>
+</html>

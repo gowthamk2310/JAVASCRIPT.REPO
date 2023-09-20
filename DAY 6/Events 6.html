@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        1st Number : <input type="text" id="firstNumber" /><br>
+        2nd Number: <input type="text" id="secondNumber" /><br>
+        <input type="button" onClick="add()" Value="Addition" />
+        <input type="button" onClick="sub()" Value="Subtraction" />
+        <input type="button" onClick="mul()" Value="Multiply" />
+        <input type="button" onClick="div()" Value="Divide" />
+    </form>
+        <p>The Result is : <br>
+            <div id="result"></div>
+        </p>
+
+<script>
+    
+    function mul()
+    {
+        var num1 = document.getElementById("firstNumber").value;
+    var num2 = document.getElementById("secondNumber").value;
+       document.getElementById("result").innerHTML = num1 * num2;
+    }
+    function sub()
+    {
+        var num1 = document.getElementById("firstNumber").value;
+    var num2 = document.getElementById("secondNumber").value;
+       document.getElementById("result").innerHTML = num1-num2;
+    }
+    function add()
+    {
+        var num1 = document.getElementById("firstNumber").value;
+    var num2 = document.getElementById("secondNumber").value;
+       document.getElementById("result").innerHTML = num1+num2;
+    }
+    function div()
+    {
+        var num1 = document.getElementById("firstNumber").value;
+    var num2 = document.getElementById("secondNumber").value;
+       document.getElementById("result").innerHTML = num1/num2;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="input1"> Input 1:</label>
+    <input type=" text" id="input1"><br>
+
+    <label for="input2"> Input 2:</label>
+    <input type=" text" id="input2"><br>
+    
+    <button onclick="valid()">Validate</button>
+
+    <script>
+        function valid(){
+            var input1val = document.getElementById("input1").value;
+            var input2val = document.getElementById("input2").value;
+
+            if(!input1val && !input2val)
+            {
+                alert(' One of your data is empty');
+            }
+            else{
+                alert('Data has been entered correctly');
+            }
+        }    
+        </script>
+        </body>
+</html>
