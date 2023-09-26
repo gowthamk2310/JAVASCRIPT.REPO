@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="integerInput">Enter an Integer:</label>
+    <input type="text" id="input" placeholder="Enter an integer">
+    <input type="text" id="input" onkeydown="int()" placeholder="press one key to append">
+    <!-- <button onclick="int()">Add Integer</button> -->
+    
+    <select id="sel">
+        <option value="">Select an integer</option>
+    </select>
+    
+    <script>
+        function int() 
+        {
+            var user_input = parseInt(document.getElementById("input").value);
+            if (Number.isInteger(user_input)) 
+            {
+                var select_tag = document.getElementById("sel");
+                var opt_tag = document.createElement('option');
+                opt_tag.setAttribute("value", user_input);
+                opt_tag.textContent = user_input;
+                select_tag.appendChild(opt_tag);
+            }
+            else
+            {
+                window.alert('Give an integer');
+            }
+        }
+    </script>
+</body>
+</html>
