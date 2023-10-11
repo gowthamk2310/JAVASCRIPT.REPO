@@ -19,9 +19,9 @@
             var input1val = document.getElementById("input1").value;
             var input2val = document.getElementById("input2").value;
 
-            if(!input1val && !input2val)
+            if(!input1val || !input2val)
             {
-                alert(' One of your data is empty');
+                alert(' One of your data is empty kindly fill it and try again 😊');
             }
             else{
                 alert('Data has been entered correctly');

@@ -31,6 +31,13 @@
             {
                 window.alert('Give an integer');
             }
+            document.getElementById("input").addEventListener("keypress",function(s){
+            console.log(s)
+            if(s.key=="Enter"){
+                int();
+            }
+        })
+        document.querySelector("button").addEventListener("click",int())
         }
     </script>
 </body>

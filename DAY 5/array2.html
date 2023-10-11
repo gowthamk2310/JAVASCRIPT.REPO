@@ -30,6 +30,31 @@
         console.log(Array5);
 
 
+
+        let person = {
+            "name" : "Gowtham",
+            "age"  : "21"
+        }
+        let city = {
+            "place" : "cbe",
+            "locality" : "saravanampatti"
+        }
+        let bth = {
+            ...person,
+            ...city
+        }
+        console.log(bth);
+
+        //array in 
+        <p id="d1"></p>
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruits.entries();
+
+for (let x of f) {
+  document.getElementById("d1").innerHTML += x + "<br>";
+}
     </script>
 </body>
 </html>

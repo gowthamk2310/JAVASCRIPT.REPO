@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="m1">
+    <button>Submit</button>
+    <script>
+        let btn = document.querySelector("button");
+        btn.onclick = function() {
+            let input1 = document.getElementById("m1").value;
+            let pattern = /^[6-9][\d]{9}$/g;
+            if (pattern.test(input1) == true){
+                alert("correct");
+                }else{alert('wrong');
+            }
+        };
+    </script>
+</body>
+</html>
